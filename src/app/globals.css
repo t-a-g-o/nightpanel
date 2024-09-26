@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 18% 13%;
+    --foreground: 220 13% 91%;
+    --card: 220 18% 16%;
+    --card-foreground: 220 13% 91%;
+    --popover: 220 18% 16%;
+    --popover-foreground: 220 13% 91%;
+    --primary: 252 100% 67%;
+    --primary-foreground: 220 13% 91%;
+    --secondary: 220 16% 22%;
+    --secondary-foreground: 220 13% 91%;
+    --muted: 220 16% 22%;
+    --muted-foreground: 220 13% 65%;
+    --accent: 252 100% 67%;
+    --accent-foreground: 220 13% 91%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 13% 91%;
+    --border: 220 16% 22%;
+    --input: 220 16% 22%;
+    --ring: 252 100% 67%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', Arial, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+
+  
+  .background {
+    background-color: #1d1d1d;
+  }
+
+  .light-text {
+    color: #d6d6cf;
+  }
+
+  .header-text {
+    color: #d6d6cf;
+    font-weight: 700;
+    font-size: 1px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add these styles to your globals.css file */
+.dock-item {
+  @apply px-4 py-2 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors duration-200;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.spotlight-glow {
+  position: relative;
+  display: inline-block;
+}
+
+.spotlight-glow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 25%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  filter: blur(20px);
+  z-index: -1;
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Add these styles at the end of your globals.css file */
+
+.spotlight-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.spotlight-reveal.delay-300 {
+  transition-delay: 300ms;
+}
+
+.spotlight-reveal.delay-600 {
+  transition-delay: 600ms;
+}
+
+.spotlight-reveal.delay-900 {
+  transition-delay: 900ms;
+}
+
+/* This will be applied when the page is loaded */
+:root:has(main) .spotlight-reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add or update these styles in your globals.css file */
+.spotlight-reveal > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.spotlight-reveal > *:nth-child(1) { transition-delay: 0ms; }
+.spotlight-reveal > *:nth-child(2) { transition-delay: 200ms; }
+.spotlight-reveal > *:nth-child(3) { transition-delay: 400ms; }
+.spotlight-reveal > *:nth-child(4) { transition-delay: 600ms; }
+
+/* This will be applied when the page is loaded */
+:root:has(main) .spotlight-reveal > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add these styles at the end of your globals.css file */
+
+.transition-all {
+  transition-property: all;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.translate-y-20 {
+  transform: translateY(5rem);
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add this to your globals.css file if not already present */
+html {
+  scroll-behavior: smooth;
+}
