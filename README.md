@@ -23,13 +23,14 @@ Created by [@t-a-g-o](https://github.com/t-a-g-o)
 - **Responsive Design:** Optimized for most screen sizes, ensuring smooth performance on desktops, tablets, and mobile devices.
 - **Minimalist Layout:** Prioritizes content with a simple, easy-to-navigate structure that avoids clutter.
 - **Customizable Elements:** Easily modify colors, fonts, and layout settings to match your branding or preferences.
-- **Features Bento Grid:** Customize 7 different features to display
-- **Testimonials Marquee:** Show off as many testimonials as you want as they scroll by the screen
+- **Features Bento Grid:** Customize 7 different features to display.
+- **Testimonials Marquee:** Show off as many testimonials as you want as they scroll by the screen.
+- **Statistic Ticker:** Give others some statistics about things related to your product or project.
 
 ## Screenshots
-![Showcase 1](./readme/showcase1.png)
-![Showcase 3](./readme/showcase3.png)
-![Showcase 2](./readme/showcase2.png)
+![Showcase 1](./readme/showcase-1.png)
+![Showcase 3](./readme/showcase-2.png)
+![Showcase 2](./readme/showcase-3.png)
 
 ## Setup
 1. Clone the repository
