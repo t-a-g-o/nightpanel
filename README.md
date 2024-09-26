@@ -23,26 +23,23 @@ Created by [@t-a-g-o](https://github.com/t-a-g-o)
 - **Responsive Design:** Optimized for most screen sizes, ensuring smooth performance on desktops, tablets, and mobile devices.
 - **Minimalist Layout:** Prioritizes content with a simple, easy-to-navigate structure that avoids clutter.
 - **Customizable Elements:** Easily modify colors, fonts, and layout settings to match your branding or preferences.
-- **Features Bento Grid:** Simple and effective way to get in touch with you
-- **Testimonials Marquee:** Introduce yourself or your team members
-- **Customizable:** Easy to modify and adapt to your personal brand
-
+- **Features Bento Grid:** Customize 7 different features to display
+- **Testimonials Marquee:** Show off as many testimonials as you want as they scroll by the screen
 
 ## Screenshots
 ![Showcase 1](./readme/showcase1.png)
 ![Showcase 3](./readme/showcase3.png)
 ![Showcase 2](./readme/showcase2.png)
 
-
 ## Setup
 1. Clone the repository
     ```sh
-    git clone https://github.com/t-a-g-o/lumina.git
+    git clone https://github.com/t-a-g-o/nightpanel.git
     ```
 
-2. Go into the lumina directory
+2. Go into the NightPanel directory
     ```sh
-    cd lumina
+    cd nightpanel
     ```
 
 3. Install requirements
