@@ -149,7 +149,7 @@ export default function Home() {
         </div>
 
 
-        <div className="w-full mb-24">
+        <div className="w-full mb-24 relative">
           <motion.h2 
             className="text-4xl md:text-5xl font-bold mb-4 text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -174,7 +174,6 @@ export default function Home() {
             Join thousands of satisfied gamers who have made Ascendara their go-to gaming platform.
           </motion.p>
           
-          <div className="relative w-full overflow-hidden">
           <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] overflow-hidden">
             <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent z-10"></div>
             <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black to-transparent z-10"></div>
@@ -197,7 +196,6 @@ export default function Home() {
               </Marquee>
             ))}
           </div>
-          </div>
         </div>
 
         <div ref={ref4}>
@@ -205,9 +203,10 @@ export default function Home() {
             <div ref={ref4}>
               <BlurIn isInView={inView4}>
                 <h2 className="mb-4 text-4xl md:text-5xl font-bold text-white text-center">
-                  Welcome to a{' '}
+                  Welcome to{' '}
                   <TypingAnimation
-                    words={["Download Manager", "Gaming Launcher"]}
+                    // You can add more text to the array to type more than two words
+                    words={["Your Product", "Your Service"]}
                     typingSpeed={100}
                     deletingSpeed={50}
                     emptyPauseDuration={500}
