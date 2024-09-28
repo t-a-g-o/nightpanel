@@ -4,13 +4,12 @@ import React, { useState, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-
-import { IconModernInterface, IconBrowser, IconCommunity, IconDownload, IconCustomize, IconShield } from '@/components/icons/FeatureIcons';
+import { IconPlaceholder } from '@/components/icons/IconPlaceholder';
 
 const features = [
   {
-    title: "Feature 1 in Depth",
-    icon: IconModernInterface,
+    title: "Feature 1",
+    icon: IconPlaceholder,
     description: "Ascendara's interface prioritizes simplicity and efficiency, ensuring a smooth and intuitive user experience.",
     details: (
       <>
@@ -25,8 +24,8 @@ const features = [
     )
   },
   {
-    title: "Feature 2 in Depth",
-    icon: IconBrowser,
+    title: "Feature 2",
+    icon: IconPlaceholder,
     description: "Enjoy seamless gameplay with easy troubleshooting options.",
     details: (
       <>
@@ -41,8 +40,8 @@ const features = [
     )
   },
   {
-    title: "Feature 3 in Depth",
-    icon: IconCommunity,
+    title: "Feature 3",
+    icon: IconPlaceholder,
     description: "Contribute to Ascendara's growth and improvement through its open-source model.",
     details: (
       <>
@@ -57,8 +56,8 @@ const features = [
     )
   },
   {
-    title: "Feature 4 in Depth",
-    icon: IconDownload,
+    title: "Feature 4",
+    icon: IconPlaceholder,
     description: "Ascendara is designed to be lightweight and efficient.",
     details: (
       <>
@@ -73,8 +72,8 @@ const features = [
     )
   },
   {
-    title: "Feature 5 in Depth",
-    icon: IconCustomize,
+    title: "Feature 5",
+    icon: IconPlaceholder,
     description: "Personalize your gaming experience with some of Ascendara's features.",
     details: (
       <>
@@ -89,8 +88,8 @@ const features = [
     )
   },
   {
-    title: "Feature 6 in Depth",
-    icon: IconShield,
+    title: "Feature 6",
+    icon: IconPlaceholder,
     description: "Ascendara prioritizes user safety with trusted game sources and community verification.",
     details: (
       <>
@@ -194,11 +193,32 @@ function LearnMoreContent() {
           );
         })}
       </div>
-      <div className="mt-16 text-center">
-        <h2 className="text-3xl pt-16 font-semibold mb-4 text-white">Check Out this Link</h2>
-        <p className="mb-6 max-w-2xl mx-auto text-white">This is where you can put another button. Maybe read the docs or learn more.</p>
-        <Link href="https://github.com/tagoWorks/ascendara/wiki/Contributing#development-roadmap" className="inline-flex items-center px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200">
-          I'm a button
+      <div ref={techStackRef} className="mt-16 w-full max-w-6xl">
+        <motion.div
+          className="bg-black border border-white text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+          whileHover={{ scale: 1.02, borderColor: 'rgb(229, 231, 235)' }}
+        >
+          <h1 className="mb-4 text-2xl font-semibold text-white">Feature 7 / Tech Stack</h1>
+          <div className="text-white space-y-2">
+            <p>Ascendara leverages a modern tech stack to deliver a fast, responsive, and feature-rich gaming platform:</p>
+            <ul className="list-disc pl-5 space-y-2 mt-4">
+              <li><strong>Python:</strong> Powers the backend, handling game downloads, installations, and server-side operations with efficiency and reliability.</li>
+              <li><strong>JavaScript:</strong> The primary language for frontend development, enabling dynamic and interactive user interfaces.</li>
+              <li><strong>React:</strong> A JavaScript library for building user interfaces, allowing for efficient updates and rendering of components.</li>
+              <li><strong>Next.js:</strong> A React framework that enables server-side rendering and generates static websites for faster page loads and improved SEO.</li>
+              <li><strong>Tailwind CSS:</strong> A utility-first CSS framework for rapidly building custom user interfaces without leaving your HTML.</li>
+              <li><strong>Electron:</strong> Enables the creation of cross-platform desktop applications using web technologies, allowing Ascendara to run as a native desktop app.</li>
+              <li><strong>TypeScript:</strong> A typed superset of JavaScript that compiles to plain JavaScript, adding optional static typing for improved code quality and developer productivity.</li>
+              <li><strong>Framer Motion:</strong> A production-ready motion library for React that powers animations and transitions in the UI.</li>
+            </ul>
+           </div>
+        </motion.div>
+      </div>
+      <div className="mt-12 text-center">
+        <h2 className="text-3xl pt-16 font-semibold mb-4 text-white">Roadmap</h2>
+        <p className="mb-6 max-w-2xl mx-auto text-white">Here you can put links to show your roadmap to other users.</p>
+        <Link target="_blank" rel="noopener noreferrer" href="/" className="inline-flex items-center px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200">
+          View Roadmap
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
           </svg>

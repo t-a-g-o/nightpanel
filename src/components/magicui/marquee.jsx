@@ -13,7 +13,7 @@ export default function Marquee({
     <div
       {...props}
       className={cn(
-        "group flex overflow-hidden [--duration:360s] [--gap:1rem]", // Increased duration from 40s to 120s
+        "group flex overflow-hidden [--duration:120s] [--gap:1rem]", // Increased duration from 40s to 120s
         {
           "flex-row": !vertical,
           "flex-col": vertical,
