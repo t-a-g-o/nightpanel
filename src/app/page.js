@@ -80,7 +80,7 @@ export default function Home() {
   const handleDownload = async () => {
     try {
       // Link to file to send to user
-      window.location.href = "https://example.com/download";
+      window.location.href = "https://example.com/fileinsall.exe";
     } catch (error) {
       console.error('Error starting download:', error);
     }
@@ -130,7 +130,7 @@ export default function Home() {
               >
                 Download Hero Button
               </button>
-              <Link href="https://ascendara.app/docs" target="_blank" rel="noopener noreferrer" className="bg-black text-white border-2 border-white font-bold py-3 px-8 rounded-lg transition duration-300 ease-in-out hover:bg-white hover:text-black">
+              <Link href="/" target="_blank" rel="noopener noreferrer" className="bg-black text-white border-2 border-white font-bold py-3 px-8 rounded-lg transition duration-300 ease-in-out hover:bg-white hover:text-black">
                 Hero Button 2
               </Link>
             </div>
